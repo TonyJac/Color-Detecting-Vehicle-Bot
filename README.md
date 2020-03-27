@@ -6,4 +6,4 @@ The car moves when green light is shown and stops when red is shown. The process
 OpenCV,
 Numpy,
 PySerial,
-Motor Sheild Library https://github.com/adafruit/Adafruit-Motor-Shield-library
+Motor Shield Library https://github.com/adafruit/Adafruit-Motor-Shield-library
