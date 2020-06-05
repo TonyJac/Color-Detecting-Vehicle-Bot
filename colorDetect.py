@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import serial
 cap = cv2.VideoCapture(0)
-arduinoData = serial.Serial("COM3",9600)
+arduinoData = serial.Serial("COM3",9600)    #Initialise Serial port
 
 while True:
     ret, frame = cap.read()
@@ -34,13 +34,13 @@ while True:
                 break
             
             
-    """for contour in contoursRed:
+    for contour in contoursRed:
             cv2.drawContours(frame, contour,-1, (0, 0, 255), 3)
             area = cv2.contourArea(contour)
             if area>10000:
                 print(area)
                 arduinoData.write(b"0")
-                break"""
+                break
         
             
     cv2.imshow("Frame", frame)
